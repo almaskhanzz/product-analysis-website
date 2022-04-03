@@ -1,0 +1,13 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 249, 253);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav a {
+    margin-right: 40px;
+    font-size: 20px;
+}
