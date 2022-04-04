@@ -53,9 +53,10 @@
     margin-left: 10px;
 }
 
-.review-container h2 {
+.customer-reviews {
     text-align: center;
     font-size: 32px;
+    color: #061e26;
 }
 
 .review-card {
@@ -73,6 +74,33 @@
     border-radius: 5px;
     padding: 8px;
     box-shadow: 0 2px 6px 0 #cfd3d7, 0 4px 10px 0 #cfd3d7;
+}
+
+.review-name {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 23px;
+    color: #bbdfeb;
+}
+
+.review-ratings {
+    padding-bottom: 12px;
+    font-size: 18px;
+    color: #9eb6be;
+}
+
+.review-name,
+.review-ratings {
+    text-align: center;
+}
+
+.rating-color {
+    color: rgb(232, 198, 112);
+}
+
+.review-text {
+    text-align: center;
+    color: cornsilk;
 }
 
 .review-details h1,

@@ -14,9 +14,9 @@ const Reviews = () => {
                                 <div className='image'>
                                     <img src={review.picture} alt="" />
                                 </div>
-                                <h1>{review.name}</h1>
-                                <h3>ratings: {review.ratings}</h3>
-                                <h3>{review.text}</h3>
+                                <h1 className='review-name'>{review.name}</h1>
+                                <h3 className='review-ratings'>Ratings: <span className='rating-color'>{review.ratings}</span></h3>
+                                <h3 className='review-text'>{review.text}</h3>
                             </div>
                         </div>)
                 }

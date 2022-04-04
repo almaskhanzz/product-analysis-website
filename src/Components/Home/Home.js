@@ -20,7 +20,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='review-container'>
-                <h2>Our Customer Reviews({reviews.length})</h2>
+                <h2 className='customer-reviews'>Our Customer Reviews({reviews.length})</h2>
                 <div className='review-card'>
                     {
                         reviews.slice(0, 3).map(review =>
@@ -29,9 +29,9 @@ const Home = () => {
                                     <div className='image'>
                                         <img src={review.picture} alt="" />
                                     </div>
-                                    <h1>{review.name}</h1>
-                                    <h3>ratings: {review.ratings}</h3>
-                                    <h3>{review.text}</h3>
+                                    <h1 className='review-name'>{review.name}</h1>
+                                    <h3 className='review-ratings'>Ratings: <span className='rating-color'>{review.ratings}</span></h3>
+                                    <h3 className='review-text'>{review.text}</h3>
                                 </div>
                             </div>)
                     }
