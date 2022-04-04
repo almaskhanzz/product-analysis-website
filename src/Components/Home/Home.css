@@ -50,8 +50,71 @@
 
 .review-container {
     margin-top: 30px;
+    margin-left: 10px;
 }
 
 .review-container h2 {
     text-align: center;
+    font-size: 32px;
+}
+
+.review-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+
+.reviews {
+    background-color: #f8fbff;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 2px 6px 0 #cfd3d7, 0 4px 10px 0 #cfd3d7;
+}
+
+.review-details h1,
+h3 {
+    margin: 0;
+}
+
+.review-details {
+    height: 300px;
+    color: white;
+    background-color: #292c2c;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    width: 100px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #bbdfeb;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #9dd0e1;
 }
