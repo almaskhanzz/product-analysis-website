@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Area, AreaChart, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
 import './DashBoard.css';
 const DashBoard = () => {
     const [charts, setCharts] = useState([]);
@@ -37,8 +37,27 @@ const DashBoard = () => {
                     <CartesianGrid strokeDasharray="3 3" />
                     <Tooltip />
                     <Area type="monotone" dataKey="investment" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
-                    <Area type="monotone" dataKey="revenue" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
+                    <Area type="monotone" dataKey="revenue" stroke="#82ca9d" fill="url(#colorPv)" />
                 </AreaChart>
+            </div>
+            <div className='bar-chart'>
+                <h3>Investment VS Revenue</h3>
+                <BarChart width={550} height={300} data={charts}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey={'month'} />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Bar dataKey="investment" fill="#8884d8" />
+                    <Bar dataKey="revenue" fill="#82ca9d" />
+                </BarChart>
+            </div>
+            <div className="pie-chart">
+                <h3>Investment VS Revenue</h3>
+                <PieChart width={500} height={300}>
+                    <Pie data={charts} dataKey="investment" nameKey="name" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
+                    <Pie data={charts} dataKey="revenue" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
+                </PieChart>
             </div>
 
         </div>
