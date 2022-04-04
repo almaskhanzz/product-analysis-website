@@ -108,7 +108,8 @@ h3 {
 
 .btn button {
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 13px 40px;
+    margin-top: 15px;
     border: none;
     border-radius: 10px;
     background-color: #bbdfeb;
