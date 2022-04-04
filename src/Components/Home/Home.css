@@ -1,0 +1,57 @@
+.home-preview {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #fafafa;
+    padding-bottom: 20px;
+}
+
+.heading {
+    width: 600px;
+    padding-top: 50px;
+    padding-left: 120px;
+}
+
+.heading h1 {
+    font-size: 40px;
+    line-height: 1.15;
+    margin-bottom: 0;
+}
+
+.heading h3 {
+    margin-top: 15px;
+    font-size: 25px;
+    color: #0c5d76;
+}
+
+.heading p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.heading button {
+    font-size: 22px;
+    padding: 15px 25px;
+    border: 0;
+    border-radius: 10px;
+    color: #085066;
+    background-color: #ebf1fa;
+    cursor: pointer;
+}
+
+.heading button:hover {
+    background-color: #e3ecf9;
+    color: #033545;
+}
+
+.image-container img {
+    width: 400px;
+    padding-right: 80px;
+}
+
+.review-container {
+    margin-top: 30px;
+}
+
+.review-container h2 {
+    text-align: center;
+}
