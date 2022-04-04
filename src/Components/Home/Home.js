@@ -1,8 +1,10 @@
 import './Home.css';
 import Airpods from '../../Assets/Images/airpods-pro_1.jpg';
 import useReviews from '../../hooks/useReviews';
+import { useNavigate } from 'react-router-dom';
 const Home = () => {
     const [reviews, setReviews] = useReviews();
+    const navigate = useNavigate();
     return (
         <div className='home-container'>
             <div className='home-preview'>
@@ -35,7 +37,7 @@ const Home = () => {
                     }
                 </div>
                 <div className='btn'>
-                    <button>See All Reviews</button>
+                    <button onClick={() => navigate('/reviews')}>See All Reviews</button>
                 </div>
             </div>
         </div>
