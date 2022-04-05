@@ -26,3 +26,26 @@
     text-align: justify;
     margin-top: 8px;
 }
+
+@media only screen and (max-width: 600px) {
+    .blogs-container h1 {
+        text-align: center;
+        font-size: 22px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    .blogs {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .blogs h2 {
+        font-size: 18px;
+    }
+
+    .blogs p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}

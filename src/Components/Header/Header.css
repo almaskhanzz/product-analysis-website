@@ -1,13 +1,29 @@
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.header-container {
     background-color: #fafafa;
     padding-top: 35px;
     padding-bottom: 35px;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 nav a {
     margin-right: 40px;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-container {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    nav a {
+        margin-right: 15px;
+        font-size: 14px;
+    }
 }

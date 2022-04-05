@@ -13,7 +13,9 @@ const Home = () => {
                     <h3>Spatial audio with
                         dynamic head tracking</h3>
                     <p>AirPods Pro are the only in-ear headphones with Active Noise Cancellation that continuously adapts to the geometry of your ear and the fit of the ear tips — blocking out the world so you can focus on what you're listening to.</p>
-                    <button>Live Demo</button>
+                    <div className='btn-demo'>
+                        <button>Live Demo</button>
+                    </div>
                 </div>
                 <div className='image-container'>
                     <img src={Airpods} alt="" />

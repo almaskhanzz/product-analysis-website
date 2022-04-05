@@ -1,9 +1,10 @@
 import React from 'react';
 import './About.css';
+import Website from '../../Assets/Images/website1.png';
 const About = () => {
     return (
-        <div>
-            <h1>Hello from About</h1>
+        <div className='about-container'>
+            <img src={Website} alt="" />
         </div>
     );
 };

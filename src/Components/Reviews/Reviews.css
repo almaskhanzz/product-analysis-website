@@ -5,3 +5,14 @@
 .review-length {
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .review-container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .review-length {
+        font-size: 28px;
+    }
+}

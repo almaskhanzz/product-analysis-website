@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import './DashBoard.css';
 const DashBoard = () => {
     const [charts, setCharts] = useState([]);
@@ -11,7 +11,7 @@ const DashBoard = () => {
     return (
         <div className='dashBoard-container'>
             <div className='line-chart'>
-                <LineChart width={550} height={300} data={charts} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
+                <LineChart className='lines' width={550} height={300} data={charts} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
                     <Line type="monotone" dataKey={'sell'} stroke="#8884d8"></Line>
                     <CartesianGrid stroke="#ccc" strokeDasharray="4 4" />
                     <XAxis dataKey={'month'} />

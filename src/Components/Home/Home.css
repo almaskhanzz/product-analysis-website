@@ -28,7 +28,7 @@
     font-weight: 600;
 }
 
-.heading button {
+.btn-demo button {
     font-size: 22px;
     padding: 15px 25px;
     border: 0;
@@ -38,14 +38,18 @@
     cursor: pointer;
 }
 
-.heading button:hover {
+.btn-demo button:hover {
     background-color: #e3ecf9;
     color: #033545;
 }
 
+.image-container {
+    padding-right: 80px;
+}
+
 .image-container img {
     width: 400px;
-    padding-right: 80px;
+
 }
 
 .review-container {
@@ -157,4 +161,77 @@ h3 {
     color: rgb(185, 206, 203);
     text-decoration: none;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .home-preview {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* heading */
+
+    .heading {
+        width: 350px;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .heading h1 {
+        font-size: 28px;
+        text-align: center;
+        line-height: 1;
+        margin-top: 0;
+
+    }
+
+    .heading h3 {
+        margin-top: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .heading p {
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .btn-demo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .btn-demo button {
+        font-size: 16px;
+        padding: 10px 15px;
+        border-radius: 25px;
+    }
+
+    .btn-demo button:hover {
+        background-color: #e3ecf9;
+        color: #033545;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding-right: 0;
+        order: 2;
+    }
+
+    .image-container img {
+        width: 200px;
+    }
+
+    .customer-reviews {
+        font-size: 22px;
+    }
+
+    .review-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
