@@ -1,0 +1,28 @@
+.blogs-container {
+    background-color: rgb(244, 245, 245);
+    padding-bottom: 20px;
+}
+
+.blogs-container h1 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: rgb(7, 47, 55);
+}
+
+.blogs {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.blogs h2 {
+    margin-bottom: 0;
+}
+
+.blogs p {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+    margin-top: 8px;
+}
